@@ -1,0 +1,152 @@
+.header {
+    // Size and Position
+    width: auto;
+    padding: 10px 20px;
+
+    // Flexbox
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    row-gap: 5px;
+
+    // Color
+    background-color: var(--emerald-600);
+
+    // @Media
+    @media (max-width: 900px) {
+        // Size and Position
+        padding-left: 0;
+        padding-right: 0;
+
+        // Flexbox
+        text-align: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+.logo {
+    // Text
+    font-size: 56px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: white; 
+
+    // Props
+    &:hover {
+        cursor: pointer;
+    }
+
+    // @Media
+    @media (max-width: 900px) {
+        width: 100%;
+        border-bottom: 1px solid white;
+        font-size: 48px;
+    }
+    @media (max-width: 600px) {
+        font-size: 36px;
+    }
+}
+
+.nav {
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+}
+
+.ul {
+    // Flexbox
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+    // Other
+    list-style-type: none;
+
+    li {
+        display: block;
+        margin: 0px 10px 0px 5px;
+        width: 100%;
+    }
+
+    // @Media
+    @media (max-width: 900px) {
+ 
+    }
+    @media (max-width: 600px) {
+        
+    }
+    @media (max-width: 350px) {
+
+    }
+}
+
+.navItem {
+    // Size and Position
+    padding: 10px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    // Text
+    font-size: 36px;
+    font-family: 'Source Sans 3';
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+
+    // Border
+    border-bottom: 4px solid transparent;
+
+    // Animation
+    transition: 0.1s;
+
+    // Props
+    &:hover {
+        // Color
+        background-color: var(--emerald-400);
+
+        // Animation
+        transition: 0.1s;
+
+        // Other
+        cursor: pointer;
+
+        // Border
+        border-bottom: 4px solid white;
+    }
+
+    // @Media
+    @media (max-width: 600px) {
+        font-size: 24px;
+    }
+    @media (max-width: 450px) {
+        font-size: 16px;
+    }
+    @media (max-width: 350px) {
+        font-size: 12px;
+    }
+}
+
+.navItemSelected {
+    @extend .navItem;
+    // Text
+    color: yellow;
+
+    // Border
+    border-bottom: 4px solid yellow;
+
+    &:hover {
+        // Border
+        border-bottom: 4px solid yellow;
+
+        // Color
+        background-color: var(--emerald-400);
+    }
+}
