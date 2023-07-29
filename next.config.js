@@ -8,7 +8,14 @@ const nextConfig = {
     includePaths: [path.join(__dirname, 'styles')],
   },
 
-
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
+  },
 }
 
 module.exports = nextConfig;

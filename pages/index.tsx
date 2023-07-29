@@ -1,10 +1,10 @@
+import Home from "@/components/pages/home/home";
+
 
 const HomePage: React.FC = () => {
 
   return (
-    <main>
-      <h1>HomePage</h1>
-    </main>
+    <Home/>
   )
 }
 

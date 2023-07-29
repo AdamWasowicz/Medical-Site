@@ -1,5 +1,5 @@
-import Navigation from '../ui/navigation/navigation';
-import Footer from '../ui/footer/footer';
+import Navigation from '@/components/ui/navigation/navigation';
+import Footer from '@/components/ui/footer/footer';
 import styles from './main-layout.module.scss';
 
 
@@ -13,7 +13,7 @@ const MainLayout: React.FC<IMainLayoutProps> = (props) => {
         <div>
             <Navigation/>
 
-            <main>
+            <main className={styles.main}>
                 { props.children }
             </main>
 
