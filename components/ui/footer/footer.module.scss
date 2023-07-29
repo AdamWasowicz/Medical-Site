@@ -1,4 +1,15 @@
 .footer {
+    // Size and Position
     width: 100%;
+    padding: 10px 20px;
+
+    // Text
+    font-family: 'Source Sans 3';
+    letter-spacing: 4px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+
+    // Color
     background-color: var(--emerald-400)
 }

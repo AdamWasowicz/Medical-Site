@@ -4,7 +4,7 @@ const Footer: React.FC = () => {
 
     return (
         <footer className={styles.footer}>
-            Footer
+            Adam Wąsowicz 2023 ©
         </footer>
     )
 }
