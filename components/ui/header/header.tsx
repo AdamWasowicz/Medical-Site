@@ -2,7 +2,7 @@ import styles from './header.module.scss';
 
 
 interface IHeaderProps {
-    children: string
+    children: string | JSX.Element
 }
 
 const Header: React.FC<IHeaderProps> = (props) => {

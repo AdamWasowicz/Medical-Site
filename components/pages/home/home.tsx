@@ -1,30 +1,36 @@
-import HorizontalSection from '@/components/ui/horizontal-section/horizontal-section';
 import styles from './home.module.scss'
-import Header from '@/components/ui/header/header';
-import Paragraph from '@/components/ui/paragraph/paragraph';
-import Image from 'next/image';
+import SectionWithImage from '@/components/ui/horizontal-section-with-image/section-with-image';
 
 const Home: React.FC = () => {
 
     return (
         <div className={styles.home}>
-            <HorizontalSection className={styles.twoColumns}>
-                <div>
-                    <Header>Czym jest GoodMed+?</Header>
+            <SectionWithImage
+                title='Czym jest GoodMed+?'
+                paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque imperdiet est quis placerat. Sed faucibus tellus vel vulputate malesuada. Fusce vitae tellus diam. Ut lobortis tristique porttitor. Nullam efficitur turpis a arcu venenatis, et molestie justo eleifend. Nunc ut odio est. Cras facilisis elit a ornare gravida.
 
-                    <Paragraph>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dui lorem, imperdiet eget turpis ut, laoreet mollis mi. Etiam id dui tortor. Nullam ultricies posuere metus in aliquam. Vestibulum posuere diam in elit vulputate, eu convallis sem fringilla. Nam vulputate blandit erat, ac interdum arcu rutrum nec. Praesent consectetur facilisis libero sit amet suscipit. Ut non est vitae nibh accumsan efficitur. Morbi faucibus at mi ut efficitur.
-                        Morbi efficitur aliquet arcu fringilla tempus. Cras tincidunt diam non lorem semper blandit. Sed eget odio bibendum, vestibulum quam vitae, cursus magna. Nulla in massa lectus. Phasellus vel hendrerit est, ac egestas turpis. Vestibulum posuere lacinia turpis, vitae mattis nisi laoreet mollis. Fusce lacinia lacus sed tempor finibus. Aliquam suscipit elit nec magna venenatis sodales. Vivamus turpis arcu, porttitor eget neque quis, tincidunt gravida est. Integer id erat convallis, dapibus elit in, lacinia tortor. Praesent vitae interdum justo, in commodo urna. Vivamus sem dolor, vulputate sit amet luctus eget, scelerisque sit amet risus. Duis et iaculis quam. Sed at enim nunc. Nunc accumsan mauris id elit tincidunt dignissim.
-                    </Paragraph>
-                </div>
+                Ut pulvinar finibus tincidunt. Sed elementum, leo sit amet porta mattis, purus metus fermentum dui, vulputate placerat nunc est sed orci. Pellentesque at ipsum ac nisi semper blandit. Donec condimentum dictum iaculis. Sed consectetur arcu non enim suscipit lacinia. Aenean facilisis odio scelerisque, laoreet enim ac, dignissim nisl. Sed ultricies erat ut magna eleifend, vel dignissim est venenatis. Fusce iaculis ex risus, ac tristique justo aliquam in.'
+                imageAlt='smilling seal'
+                imageSrc='/images/seal1.jpg'
+            />
 
-                <Image 
-                    src={'https://www.pbs.org/wnet/nature/files/2021/09/pexels-skitterphoto-23087-1-scaled-e1630516360213-2048x1152.jpg'} 
-                    alt='seal'
-                    height={400}
-                    width={800}
-                />
-            </HorizontalSection>
+            <SectionWithImage
+                title='Co nas wyróżnia?'
+                paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar dolor non neque tincidunt, ut fermentum metus mattis. Fusce ullamcorper ex a risus ornare vehicula. Maecenas quis arcu elementum, ullamcorper lorem id, molestie nibh. Ut ultrices metus nec neque ullamcorper laoreet. Vivamus venenatis tortor id felis pretium, ut consequat est convallis. Nulla vel tincidunt orci, eu vehicula ligula. Vestibulum fringilla magna eu ex molestie, et auctor diam tempus.
+
+                Fusce a bibendum orci, a congue felis. Proin condimentum sem et velit rutrum, et interdum lectus suscipit. Etiam elementum ornare arcu, nec sollicitudin tellus lacinia eu. Etiam suscipit ex non urna bibendum, finibus sagittis arcu aliquet. Suspendisse risus ipsum, ornare et consequat id, ullamcorper non lacus. Mauris a tellus tincidunt risus feugiat auctor. Quisque aliquet vehicula felis, eu pellentesque felis ultrices sed.'
+                imageAlt='sleping seal'
+                imageSrc='/images/seal2.jpg'
+            />
+
+            <SectionWithImage
+                title='Poznaj nasze usługi'
+                paragraph='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar dolor non neque tincidunt, ut fermentum metus mattis. Fusce ullamcorper ex a risus ornare vehicula. Maecenas quis arcu elementum, ullamcorper lorem id, molestie nibh. Ut ultrices metus nec neque ullamcorper laoreet. Vivamus venenatis tortor id felis pretium, ut consequat est convallis. Nulla vel tincidunt orci, eu vehicula ligula. Vestibulum fringilla magna eu ex molestie, et auctor diam tempus.
+
+                Fusce a bibendum orci, a congue felis. Proin condimentum sem et velit rutrum, et interdum lectus suscipit. Etiam elementum ornare arcu, nec sollicitudin tellus lacinia eu. Etiam suscipit ex non urna bibendum, finibus sagittis arcu aliquet. Suspendisse risus ipsum, ornare et consequat id, ullamcorper non lacus. Mauris a tellus tincidunt risus feugiat auctor. Quisque aliquet vehicula felis, eu pellentesque felis ultrices sed.'
+                imageAlt='happy seal'
+                imageSrc='/images/seal3.jpg'
+            />
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import styles from './paragraph.module.scss';
 
 interface IParagraphProps {
-    children: string
+    children: string | JSX.Element
 }
 
 const Paragraph: React.FC<IParagraphProps> = (props) => {
