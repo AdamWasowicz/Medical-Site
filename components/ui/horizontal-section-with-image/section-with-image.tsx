@@ -14,21 +14,25 @@ const SectionWithImage: React.FC<ISectionWithImageProps> = (props) => {
 
     return (
         <section className={styles.section}>
-            <div className={styles.textColumn}>
-                <Header>{ props.title }</Header>
+            <Header className={styles.centerOnSmallScreens}>{ props.title }</Header>
 
-                <Paragraph>
-                    { props.paragraph }
-                </Paragraph>
+            <div className={styles.twoColums}>
+                <div className={styles.textColumn}>
+                    <Paragraph>
+                            { props.paragraph }
+                    </Paragraph>
+                </div>
+
+                <div className={styles.imageColumn}>
+                    <Image 
+                        src={ props.imageSrc } 
+                        alt={ props.imageAlt }
+                        className={styles.image}
+                        height={400}
+                        width={400}
+                    />
+                </div>
             </div>
-
-            <Image 
-                src={ props.imageSrc } 
-                alt={ props.imageAlt }
-                className={styles.image}
-                height={400}
-                width={400}
-            />
         </section>
     )
 }

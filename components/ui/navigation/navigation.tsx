@@ -12,7 +12,6 @@ const Navigation: React.FC = () => {
         <header className={styles.header}>
             <Link className={styles.logo} href='/'>GoodMed+</Link>
             
-
             <nav className={styles.nav}>
                 <ul className={styles.ul}>
                     <li><Link className={`${styles.navItem} ${currentRoute == '/about-us' ? styles.navItemSelected : ''}`} href='/about-us'>O nas</Link></li>
