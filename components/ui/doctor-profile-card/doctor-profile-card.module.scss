@@ -1,0 +1,57 @@
+.doctorProfileCard {
+    // Size and Position
+    width: 300px;
+    height: 500px;
+    padding: 20px 20px; 
+
+    // Text
+    text-align: center;
+    color: white;
+
+    // Color
+    background-color: #e8e8e8;
+
+    // Other
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.image {
+    // Size and Position
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    // Other
+    object-fit: cover;
+    border: 3px solid var(--gray-600);
+}
+
+.doctorName {
+    // Text
+    font-family: 'Source Sans 3';
+    word-spacing: 2px;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--gray-800)
+}
+
+.doctorRole {
+    // Size and Position
+    margin-bottom: 10px;
+
+    // Text
+    font-family: 'Poppins';
+    letter-spacing: px;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--gray-800)
+}
+
+.doctorBio {
+    // Text
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}

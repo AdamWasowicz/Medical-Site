@@ -1,11 +1,9 @@
-import { Fragment } from 'react';
+import AboutUs from '@/components/pages/about-us/about-us';
 
 const AboutUsPage: React.FC = () => {
     
     return (
-        <Fragment>
-            <h1>AbousUsPage</h1>
-        </Fragment>
+        <AboutUs/>
     )
 }
 

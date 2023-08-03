@@ -19,6 +19,12 @@
   --emerald-600: #008264;
   --emerald-400: #00A881;
   --emerald-200: #3fbea0;
+  --emerald-100: #71f6a2;
+
+  --gray-800: #353636;
+  --gray-600: #6B6B6B;
+  --gray-400: #999999;
+  --gray-200: #cccccc;
 
   --contrast: gold;
 
@@ -26,4 +32,13 @@
   --font-header:  'Source Sans 3';
   --font-p:       'Merriweather';
   
+}
+
+p {
+  font-family: var(--font-p);
+}
+
+// Globals
+.marginBottom40px {
+  margin-bottom: 40px;
 }

@@ -136,15 +136,13 @@
 
 .navItemSelected {
     @extend .navItem;
-    // Text
-    color: yellow;
 
     // Border
-    border-bottom: 4px solid yellow;
+    border-bottom: 4px solid white;
 
     &:hover {
         // Border
-        border-bottom: 4px solid yellow;
+        border-bottom: 4px solid white;
 
         // Color
         background-color: var(--emerald-400);
