@@ -9,11 +9,11 @@ interface IHeaderProps {
 const Header: React.FC<IHeaderProps> = (props) => {
 
     return (
-        <h1 
-            className={`${styles.header} ${props.className}`}
-        >
+        <div className={`${styles.header}`}>
+            <h1 className={`${props.className}`}>
                 { props.children }
-        </h1>
+            </h1>
+        </div>
     )
 }
 

@@ -8,7 +8,8 @@
     // Text
     color: var(--gray-800);
     text-align: center;
-    font-weight: 600;
+    font-weight: inherit;
+    font-size: inherit;
 }
 
 .paragraph {
@@ -16,6 +17,12 @@
     color: var(--gray-800);
     font-weight: 400;
     text-align: center;
+
+    // @media
+    @media (max-width: 1200px) {
+        text-align: justify;
+        text-justify: inter-word;
+    }
 }
 
 .narrowContainer {
@@ -23,6 +30,11 @@
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+
+    // @media
+    @media (max-width: 1200px) {
+        width: 90%;
+    }
 }
 
 .doctorContainer {

@@ -8,9 +8,11 @@ interface IParagraphProps {
 const Paragraph: React.FC<IParagraphProps> = (props) => {
 
     return (
-        <p className={`${styles.paragraph} ${props.className}`}>
-            { props.children }
-        </p>
+        <div className={`${styles.paragraph}`}>
+            <p className={`${props.className}`}>
+                { props.children }
+            </p>
+        </div>
     )
 }
 
